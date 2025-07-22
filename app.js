@@ -12,7 +12,7 @@ console.log('📁 Express is looking for views in:', app.get('views'));
 console.log('Looking for views in:', path.join(__dirname, 'views'));
 
 app.get('/', function (req, res) {
-  res.render('home');
+  res.send('home');
 });
 
 // app.get('/services', function (req, res) {
