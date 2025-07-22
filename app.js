@@ -12,7 +12,7 @@ console.log('📁 Express is looking for views in:', app.get('views'));
 console.log('Looking for views in:', path.join(__dirname, 'views'));
 
 app.get('/', function (req, res) {
-  res.send('home');
+  res.render('home');
 });
 
 // app.get('/services', function (req, res) {
@@ -37,4 +37,4 @@ app.get('*', function (req, res) {
 
 // app.listen(process.env.PORT || 3000, console.log(`App is running`))
 
-module.exports = {app} ;
+module.exports = {app};
