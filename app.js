@@ -1,19 +1,20 @@
-const express = require('express');
+const express = require('express')
 
-const app = express();
+const app = express()
 
-const path = require('path');
-app.set('views', path.join(__dirname, 'views'));
+const path = require('path')
+app.set('views', path.join(__dirname, 'views'))
 
-app.use(express.static('public'));
-app.set('view engine', 'ejs');
-console.log('📁 Express is looking for views in:', app.get('views')); 
+app.use(express.static('public'))
+app.set('view engine', 'ejs')
+console.log('📁 Express is looking for views in:', app.get('views'))
 
-console.log('Looking for views in:', path.join(__dirname, 'views'));
+console.log('Looking for views in:', path.join(__dirname, 'views'))
 
 app.get('/', function (req, res) {
-  res.render('home');
-});
+  res.send('Running on Netlify')
+  // res.render('home');
+})
 
 // app.get('/services', function (req, res) {
 //   res.render('services');
@@ -24,17 +25,17 @@ app.get('/', function (req, res) {
 // });
 
 app.get('/contact', function (req, res) {
-  res.render('contact');
-});
+  res.render('contact')
+})
 
 app.get('/websitept', function (req, res) {
-  res.render('websitept');
-});
+  res.render('websitept')
+})
 
 app.get('*', function (req, res) {
-  res.render('error');
-});
+  res.render('error')
+})
 
 // app.listen(process.env.PORT || 3000, console.log(`App is running`))
 
-module.exports = {app};
+module.exports = { app }
