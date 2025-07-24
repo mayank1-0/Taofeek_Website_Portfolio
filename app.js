@@ -12,8 +12,8 @@ console.log('📁 Express is looking for views in:', app.get('views'))
 console.log('Looking for views in:', path.join(__dirname, 'views'))
 
 app.get('/', function (req, res) {
-  res.send('Running on Netlify')
-  // res.render('home');
+  // res.send('Running on Netlify')
+  res.render('home');
 })
 
 // app.get('/services', function (req, res) {
