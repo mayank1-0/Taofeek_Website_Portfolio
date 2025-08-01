@@ -36,6 +36,6 @@ app.get('*', function (req, res) {
   res.render('error')
 })
 
-// app.listen(process.env.PORT || 3000, console.log(`App is running`))
+app.listen(process.env.PORT || 3000, console.log(`App is running`))
 
 module.exports = { app }
