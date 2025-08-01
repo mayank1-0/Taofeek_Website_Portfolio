@@ -11,10 +11,8 @@
   "author": "Bello Taofeek",
   "license": "ISC",
   "dependencies": {
-    "@netlify/functions": "^4.1.14",
     "ejs": "^3.1.10",
-    "express": "^4.21.2",
-    "serverless-http": "^3.2.0"
+    "express": "^4.21.2"
   },
   "keywords": []
 }
